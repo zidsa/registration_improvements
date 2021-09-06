@@ -549,6 +549,9 @@ font-size: 25px;
   color:var(--fifthGrey);
   margin-left: 40px;
 }
+.content-align{
+  margin-right: -35px;
+}
   
 
 

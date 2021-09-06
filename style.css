@@ -48,6 +48,14 @@ body {
   left:0px;
   height: 100%;
   width: 100%;
+  margin-left: 0 !important;
+  z-index: -1;
+}
+.right-background{
+  margin-left: 0 !important;
+}
+.left-background{
+  padding-left: 0 !important;
 }
 /*-- Navbar Section */
 .nav-link span{
@@ -71,6 +79,7 @@ body {
   font-family: 'Cairo', sans-serif;
   font-weight: var(--fontWeightTwo);
   font-size: 35px;
+  color:var(--primaryThree)
 }
 .login-section{
   margin-top: 300px;
@@ -107,7 +116,7 @@ font-size: 25px;
   font-size: 15px;
   font-weight: var(--fontWeight);
   height: 56px;
-  line-height: 2 !important;
+  line-height: 2.5 !important;
   
 }
 
@@ -189,6 +198,7 @@ margin-left: 50px;
   z-index: -1;
 }
 
+
 .progress {
   background-color: var(--line-border-fill);
   position: absolute;
@@ -214,8 +224,22 @@ margin-left: 50px;
   transition: 0.4s ease;
 }
 
-.circle.active {
+.active {
   border-color: var(--line-border-fill);
+  color:var(--primaryTwo)
+}
+.circle-done{
+  background-color: #fff;
+  color:var(--secondryGrey);
+  background-color: var(--primaryTwo);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--line-border-empty);
+  transition: 0.4s ease;
 }
 .progress-container-text {
   display: flex;
@@ -257,6 +281,7 @@ font-size: 20px;
  border: 1px solid var(--primaryColor)!important;
   font-size: 15px;
   font-weight: var(--fontWeight);
+  line-height: 2 !important;
 
 }
 .register-image img{
@@ -278,6 +303,13 @@ font-size: 20px;
   font-size: 15px;
   color:var( --primaryFour);
   font-weight: var(--fontWeightTwo);
+}
+#inputState {
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0 !important;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
 }
 
 /*--index-verification.html  --*/
@@ -489,6 +521,7 @@ font-size: 25px;
     font-family: 'Cairo', sans-serif;
 
   }
+ 
   
   
 

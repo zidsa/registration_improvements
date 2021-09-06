@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root {
+  --primaryColor: #8D5DA7;
+  --primaryTwo:#45A787;
+  --primaryThree:#4D435C;
+  --primaryFour:#686A6C;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #333333;
+  --secondryGrey:#999;
+  --thirdGrey: #F2F2F2;
+  --forthGrey: #D9D9D9;
+  --fifthGrey:#999999;
+  --sixGrey:#828282;
+  --navColor: #E7E2DD;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --fontWeight: 400;
+  --fontWeightTwo:700;
+  --line-border-fill: #45A787;
+  --line-border-empty: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  
+}
+
+/*--index.html  --*/
+.bd_primary{
+  background-color: var( --primaryColor);
+  height: 100vh;
+}
+.bg-register{
+  background-color: var(--thirdGrey)!important;
+  height: 100vh;
+}
+.bbackgroung{
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width: 100%;
+}
+/*-- Navbar Section */
+.nav-link span{
+  font-family: 'Cairo', sans-serif;
+  font-weight: var(--fontWeight);
+  font-size: 15px;
+  color:var(--primaryFour)
+}
+.btn-login-nav{
+  color:var(--mainWhite)!important;
+  background-color: var( --primaryColor)!important;
+  border-color: var( --primaryColor)!important;
+  font-size: 15px;
+  font-weight: var(--fontWeight);
+  font-family: 'Cairo', sans-serif;
+  width: 157px;
+  height: 48px;
+}
+.login-text{
+  margin-left: 10%;
+  font-family: 'Cairo', sans-serif;
+  font-weight: var(--fontWeightTwo);
+  font-size: 35px;
+}
+.login-section{
+  margin-top: 300px;
+  
+}
+.login-section img{
+  margin-left: 250px;
+  margin-top: 130px;
+}
+
+.border-section { 
+  position: absolute;
+  border-radius: 8px;
+  width: 432px;
+  height: 328px;
+  border: 1px solid var(--primaryColor);
+  top: 410px;
+  left: 280px;
+  z-index: -10;
+}
+.login-title{
+  position: absolute;
+  top: 280px;
+  left: 200px;
+  color: var(--mainGrey);
+  font-family: 'Cairo', sans-serif;
+font-weight:var(--fontWeightTwo);
+font-size: 25px;
+}
+.btn-login{
+  color:var(--mainWhite)!important;
+  background-color: var(--primaryTwo)!important;
+  border-color: var(--primaryTwo)!important;
+  font-size: 15px;
+  font-weight: var(--fontWeight);
+  height: 56px;
+  line-height: 2 !important;
+  
+}
+
+form {
+  margin-right:auto;
+  width: 50%;
+  font-family: 'Cairo', sans-serif;
+}
+
+
+.login-label{
+  margin-right: 20px;
+}
+.password-title{
+  font-weight: var(--fontWeight);
+  color: var(--primaryColor);
+  font-size: 15px;
+  font-family: 'Cairo', sans-serif;
+  margin-right: 239px;
+}
+.new-account{
+  font-weight: var(--fontWeight);
+  color: var(--primaryThree);
+  font-size: 15px;
+  font-family: 'Cairo', sans-serif;
+  margin-right: 20%;
+}
+.new-account-now{
+  font-weight: var(--fontWeight);
+  color: var(--primaryTwo);
+  font-size: 15px;
+  font-family: 'Cairo', sans-serif;
+  text-decoration: underline;
+}
+/*--index-registeration.html  --*/
+
+/*-- Stepper Section */
+.register-section{
+  margin-top: 100px;
+  
+}
+.register-title{
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  color: var(--primaryThree);
+  font-family: 'Cairo', sans-serif;
+font-weight:var(--fontWeightTwo);
+font-size: 25px;
+}
+.register-text{
+color:var(--primaryFour);
+font-family: 'Cairo', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+margin-left: 50px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
+  max-width: 100%;
+  width: 350px;
+  margin-right: 55%;
+}
+
+.progress-container::before {
+  content: ""; /* Mandatory with ::before */
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color:var(--secondryGrey);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--line-border-empty);
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+.progress-container-text {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
+  max-width: 100%;
+  margin-right: 50%;
+}
+
+.circle-text {
+  color:var(--secondryGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cairo', sans-serif;
+  font-weight:var(--fontWeightTwo);
+font-size: 20px;
+} 
+.active-text{
+  color:var(--primaryTwo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cairo', sans-serif;
+  font-weight:var(--fontWeightTwo);
+font-size: 20px;
+}
+.register-text{
+  font-size: 15px;
+  font-weight:400;
+  color:var(--primaryFour);
+  margin-right: 80px;
+}
+.btn-register{
+  width: 185px;
+  height: 48px;
+  color:var(--primaryColor)!important;
+ border: 1px solid var(--primaryColor)!important;
+  font-size: 15px;
+  font-weight: var(--fontWeight);
+
+}
+.register-image img{
+  margin-left: 250px;
+  margin-top: 350px;
+  z-index: 50;
+}
+.register-border{
+  position: absolute;
+  border-radius: 8px;
+  width: 432px;
+  height: 328px;
+  border: 1px solid var(--primaryColor);
+  top: 330px;
+  left: 280px;
+  z-index: -1;
+}
+.form-title{
+  font-size: 15px;
+  color:var( --primaryFour);
+  font-weight: var(--fontWeightTwo);
+}
+
+/*--index-verification.html  --*/
+.verifiy-section{
+  margin-top: 180px;
+}
+
+/*-- Verification Section */
+.form-verify {
+margin-left: 150px;
+}
+  
+  .input-verification {
+    margin: 0 5px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    border: solid 1px var(--forthGrey);
+    outline: none;
+    width: 56px;
+    height: 56px;
+    transition: all .2s ease-in-out;
+    border-radius: 3px;  
+
+  }
+  
+  .input-verification:focus {
+    border-color: var(--primaryColor);
+    box-shadow: 0 0 5px var(--primaryColor) inset;
+  }
+ .input-verification::selection {
+    background: transparent;
+  }
+  .verify-title{
+font-size: 20px;
+font-family: 'Cairo', sans-serif;
+font-weight:var(--fontWeightTwo);
+color:var( --primaryFour)
+  }
+  .verify-text{
+    font-size: 20px;
+font-family: 'Cairo', sans-serif;
+color:var(--primaryFour);
+font-weight: 600;
+margin-right: 150px;
+
+  }
+  /*-- progress Section */
+  .load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spin {
+  
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    border: 4px solid var(--primaryColor);
+    border-top: 4px solid #ffffff;
+    animation: loading 2s linear infinite;
+  }
+  
+  .loading {
+    position: absolute;
+    color: var(--primaryColor);
+    font-family: 'Cairo', sans-serif;
+    font-size: 10px;
+    font-weight:var(--fontWeight);
+   
+  }
+  
+  @keyframes loading {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading-text{
+    font-size: 12px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--primaryFour);
+    font-weight:var(--fontWeight);
+    margin-right: 460px;
+  }
+  .verify-send{
+    margin-right: 350px;
+  }
+  .verify-send-again{
+    font-weight: var(--fontWeight);
+    color: var(--primaryTwo);
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    text-decoration: underline;
+  }
+  /*--index-selection.html  --*/
+  .selection-section{
+    margin-left: 250px;
+  
+  }
+  
+  .select-title{
+     position: absolute;
+  top: 180px;
+  left: 200px;
+  color: var(--primaryThree);
+  font-family: 'Cairo', sans-serif;
+font-weight:var(--fontWeightTwo);
+font-size: 25px;
+  }
+  .selection-title{
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--primaryFour);
+    font-weight: var(--fontWeightTwo);
+    margin-right: 150px;
+  }
+  .imag-border-first{
+    margin: 0 5px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    border: solid 1px var(--forthGrey);
+    outline: none;
+    width: 108px;
+    height: 80px;
+    border-radius: 3px; 
+    padding: 10px; 
+    margin-right: 460px;
+  }
+  .imag-border {
+    margin: 0 5px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    border: solid 1px var(--forthGrey);
+    outline: none;
+    width: 108px;
+    height: 80px;
+    border-radius: 3px; 
+    padding: 10px; 
+
+  }
+  .selection-sub-title{
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--primaryFour);
+    font-weight: 600;
+   margin-left: 355px;
+  }
+  .selection-product-title{
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--primaryFour);
+    font-weight: 600;
+   margin-left: 340px;
+  }
+  .selection-sub-title-now{
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--primaryFour);
+    font-weight: var(--fontWeightTwo);
+     margin-left: 370px;
+  }
+  
+  .selection-labels{
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--sixGrey);
+    font-weight: var(--fontWeight);
+  }
+  
+.form-check-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 140px !important;
+}
+  .selection-sub-title-product{
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    color:var(--primaryFour);
+    font-weight: var(--fontWeightTwo);
+   margin-left: 300px;
+  }
+  .logo-section{
+    margin-right: 355.7px;
+  }
+  .btn-selection{
+    margin-right: 440px;
+  }
+  .btn-previous{
+    width: 185px;
+  height: 48px;
+    color:var( --fifthGrey)!important;
+   border: 1px solid var(--primaryColor)!important;
+    font-size: 15px;
+    font-weight: var(--fontWeight);
+    font-family: 'Cairo', sans-serif;
+  }
+  .btn-registerNow{
+  
+    color:var(--mainWhite)!important;
+    background-color:var(--primaryTwo)!important ;
+    font-size: 15px;
+    font-weight: var(--fontWeight);
+    font-family: 'Cairo', sans-serif;
+
+  }
+  
+  
+
+

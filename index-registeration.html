@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html  dir= "rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap 4.6 RTL-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ 
+
+    <title>Registration Information Page</title>
+</head>
+<body>
+    <!-- Start Registration Section-->
+<section class="upper_nav">
+  <div class="row bbackgroung">
+    <div class="col-md-8">
+    <div class=" mt-3">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">  <img src="./images/frame.svg" alt="store logo"></a>
+      </li>
+      <li class="nav-item  mr-auto">
+        <a class="nav-link" href="#"> <span>ليس لديك حساب فى زد؟</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class=" btn btn-login-nav" href="#">سجيل الدخول</a>
+      </li>
+    
+    </ul>
+    </div>
+     <!-- End navBar-->
+    </div>
+    <div class="col-md-4">
+      <div class="bg-register">
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+<div class="col-md-6">
+<div class=" register-section">
+  <h1 class=" login-text mb-4 "> حياك الله فى زد</h1>
+  <p  class=" register-text mb-4">خطوتين تفصلك عن الانطلاق فى عالم التجارة الالكترونية</p>
+    <!-- Start Stepper-->
+    <div class="container mt-3">
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="circle active">1</div>
+          <div class="circle">2</div>
+        </div>
+        <div class="progress-container-text mb-5 ">
+        <span class="circle-text active-text">معلومات التسجيل</span>
+        <span class="circle-text">جاهزية المتجر</span>
+      </div>
+    </div>
+      <!-- End Stepper-->
+   
+ <!-- Start Form-->
+  <form  class="text-right">
+    <p  class=" mb-3 mt-3 form-title">  ساعدنا لنحصل على معلوماتك الاساسية فى هالخطوة الاولى   </p>
+    <div class="form-group">
+      <label for="exampleInputname">  اسمك الكريم</label>
+      <input type="text" class="form-control form-control-lg" id="exampleInputname" aria-describedby="nameHelp">
+      <small id="emailHelp" class="form-text text-muted">نحب نناديك باسمك</small>  
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"> البريد الالكترونى</label>
+        <input type="email" class="form-control form-control-lg " id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+      </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">كلمة المرور</label>
+      <input type="password" class="form-control form-control-lg" id="exampleInputPassword1">
+      <small id="emailHelp" class="form-text text-muted"> كلمة المرور يجب ان تحتوى على 8 حروف او ارقام على الاقل </small>  
+    </div>
+ 
+      <div class="form-row">
+        <div class="form-group col-md-9">
+            <label for="inputState">رقم الجوال</label>
+          <input type="text" class="form-control" id="inputCity">
+          <small id="emailHelp" class="form-text text-muted mb-3">   سيتم ارسال رسالة تحقق نصية على الرقم المدخل </small> 
+        </div>
+        <div class="form-group col-md-3 mt-2">
+          <label for="inputState"></label>
+          <select id="inputState" class="form-control">
+            <option selected> 🇸🇦&emsp;966   </option>
+         
+            <option style="background-image:url(images/flag.svg);">test</option>
+          </select>
+        </div>
+        
+    </div>
+    <a href="index-verification.html"  class="btn btn-login w-100">تحقق </a>
+
+ 
+  
+  </form>
+</div>
+
+</div>
+  <!-- left  Section-->
+<div class="col-md-6">
+  <div class="register-title">
+    <p>انضم لالف التجار. ارفع احتملية نموك بالانضمام </p>
+    <p>مع المنصة الاكثر تكاملا فى المنطقة</p>
+  </div>
+  <div class="register-image">  
+    <div class="register-border"></div>
+  <img  src="./images/rectangle.png" alt="store logo">
+</div>
+<div class="mt-5 text-center register-text">
+  <p> حابب تشوف شكل المدجر و لوحة النحكم؟</p>
+  <p>بامكانك اخذ جولة تجريبية</p>
+  <a href="index-registeration.html"  class="btn btn-register ">بدء الجولة التجريبية </a>
+</div>
+</div>
+</div>
+</section>
+ <!-- End  Registration Section-->
+
+  
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

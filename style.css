@@ -521,8 +521,34 @@ font-size: 25px;
     font-family: 'Cairo', sans-serif;
 
   }
- 
-  
+ .business-text{
+   font-size: 15px;
+   font-weight: var(--fontWeight);
+   font-family: 'Cairo', sans-serif;
+   color:var(--fifthGrey);
+   margin-left: 25px;
+ }
+ .known-text{
+  font-size: 15px;
+  font-weight: var(--fontWeight);
+  font-family: 'Cairo', sans-serif;
+  color:var(--fifthGrey);
+  margin-left: 35px;
+ }
+.work-text{
+  font-size: 15px;
+  font-weight: var(--fontWeight);
+  font-family: 'Cairo', sans-serif;
+  color:var(--fifthGrey);
+  margin-left: 20px;
+}
+.found-text{
+  font-size: 15px;
+  font-weight: var(--fontWeight);
+  font-family: 'Cairo', sans-serif;
+  color:var(--fifthGrey);
+  margin-left: 40px;
+}
   
 
 
